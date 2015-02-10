@@ -4,9 +4,10 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="alert alert-danger alert-dismissable center" ng-show="loginInvalid">
-        <button type="button" class="close" ng-click="loginInvalid = false" aria-label="Close"><span
-            aria-hidden="true">&times;</span></button>
-        The given username and password combination could not be found in our records
+        <span class="glyphicon glyphicon-alert"></span>
+        <button type="button" class="close" ng-click="loginInvalid = false" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+        Incorrect username or password
       </div>
     </div>
   </div>
