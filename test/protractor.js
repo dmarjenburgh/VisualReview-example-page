@@ -10,14 +10,14 @@ exports.config = {
   seleniumPort: null,
   seleniumArgs: ['-browserTimeout=60'],
   specs: [
-    'e2e/spec.js'
+    'e2e/**/*.js'
   ],
   capabilities: {
     browserName: 'chrome'
   },
   rootElement: 'body',
   beforeLaunch: function() {
-    return vr.initRun('visualReviewExampleProject', 'mainScenario');
+    return vr.initRun('VisualReviewExamplePage', 'mainScenario');
     // At this point, global variable 'protractor' object will NOT be set up,
     // and globals from the test framework will NOT be available. The main
     // purpose of this function should be to bring up test dependencies.
