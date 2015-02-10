@@ -1,17 +1,29 @@
 <div class="container">
 
 
-  <div class="alert alert-danger alert-dismissable center" ng-show="loginInvalid">
-    <button type="button" class="close" ng-click="loginInvalid = false" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    Incorrect email address and password combination</div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="alert alert-danger alert-dismissable center" ng-show="loginInvalid">
+        <button type="button" class="close" ng-click="loginInvalid = false" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+        The given username and password combination could not be found in our records
+      </div>
+    </div>
+  </div>
 
-  <form class="form-signin" ng-submit="login()">
-    <h2>Please sign in</h2>
-    <label for="inputUsername" class="sr-only">Username</label>
-    <input id="inputUsername" ng-model="username" class="form-control" name="username" type="text" placeholder="Username" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input id="inputPassword" ng-model="password" class="form-control" name="password" type="password" placeholder="Password" required>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
-  </form>
+  <div class="row">
+    <div class="col-sm-12">
+      <form class="form-signin" ng-submit="login()">
+        <h2>Please sign in</h2>
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input id="inputUsername" ng-model="username" class="form-control" name="username" type="text"
+               placeholder="Username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input id="inputPassword" ng-model="password" class="form-control" name="password" type="password"
+               placeholder="Password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 
 </div>
