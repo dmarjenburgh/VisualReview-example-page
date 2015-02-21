@@ -2,26 +2,10 @@ const VisualReview = require('visualreview-protractor');
 
 var vr = new VisualReview({
   hostname: 'localhost',
-  port: 7000,
-  metaDataFn: function (capabilities) {
-    return {
-      createdBy: 'Daniel',
-      on: '2015-02-20',
-      webStorageEnabled: capabilities.caps_.webStorageEnabled,
-      wut: undefined,
-      wat: null
-    }
-  },
-  propertiesFn: function (capabilities) {
-    return {
-      jsEnabled: capabilities.caps_.javascriptEnabled,
-      browser: capabilities.caps_.browserName
-    };
-  }
+  port: 7000
 });
 
 exports.config = {
-
   seleniumAddress: 'http://localhost:4444/wd/hub',
   seleniumPort: null,
   seleniumArgs: ['-browserTimeout=60'],
