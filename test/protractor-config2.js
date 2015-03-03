@@ -10,7 +10,7 @@ exports.config = {
   seleniumPort: null,
   seleniumArgs: ['-browserTimeout=60'],
   specs: [
-    'e2e/landingPage/landingPageScenario.js'
+    'e2e/landingPage/langingPageScenario2.js'
   ],
   capabilities: {
     browserName: 'chrome'
