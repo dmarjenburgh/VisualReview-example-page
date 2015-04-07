@@ -4,6 +4,7 @@
   "dependencies": {},
   "repository": {},
   "devDependencies": {
+    "visualreview-protractor": "0.0.3",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.0.0",
     "grunt-concurrent": "^1.0.0",
